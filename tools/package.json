@@ -1,0 +1,19 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "orace_update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bignumber.js": "^9.0.1",
+    "ccxt": "^1.34.55",
+    "eosjs": "^21.0.3",
+    "node-fetch": "^2.6.1",
+    "yargs": "^16.0.3"
+  }
+}

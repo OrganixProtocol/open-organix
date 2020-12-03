@@ -1,0 +1,6 @@
+{
+  "defaultPrivateKey": "{privatekey}",
+  "account": "organixtokep",
+  "actor": "orgainxadmin",
+  "endpoint": "http://api.kylin.alohaeos.com"
+}
