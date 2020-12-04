@@ -1,0 +1,2056 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "adddist",
+            "base": "",
+            "fields": [
+                {
+                    "name": "destination",
+                    "type": "name"
+                },
+                {
+                    "name": "code",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "addsupply",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "addsynth",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                },
+                {
+                    "name": "max_supply_to_purge",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "addsynthfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "synth",
+                    "type": "symbol"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "ref_rate",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "appsynthvest",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "burnsynths",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "burnsynthstg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "checkremliq",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "claim_withdraw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "period",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "claimfees",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "close",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "closecfeepod",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "issuer",
+                    "type": "name"
+                },
+                {
+                    "name": "maximum_supply",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "currency_stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "current_round_rate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                },
+                {
+                    "name": "round",
+                    "type": "uint64"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "debt_ledger",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "debt",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "deldist",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delirate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                },
+                {
+                    "name": "round",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delrate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "delsynth",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "delsynthfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "synth",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "distrewards",
+            "base": "",
+            "fields": [
+                {
+                    "name": "code",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "distribution",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "destination",
+                    "type": "name"
+                },
+                {
+                    "name": "code",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "editdist",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "destination",
+                    "type": "name"
+                },
+                {
+                    "name": "code",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "editexchange",
+            "base": "",
+            "fields": [
+                {
+                    "name": "waiting_period_secs",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "editexrate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "rate_stale_period",
+                    "type": "uint64"
+                },
+                {
+                    "name": "oracle_future_limit",
+                    "type": "uint64"
+                },
+                {
+                    "name": "exchange_rate_length",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "editexstate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "max_entries_in_queue",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "editfeepool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "max_exchange_fee_rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "fee_period_length",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fee_period_duration",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_fee_period_duration",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_fee_period_duration",
+                    "type": "uint64"
+                },
+                {
+                    "name": "target_threshold",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "editfpstate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "fee_period_length",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "editglobal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "status",
+                    "type": "uint64"
+                },
+                {
+                    "name": "issuer_code",
+                    "type": "name"
+                },
+                {
+                    "name": "rewards_distribution",
+                    "type": "name"
+                },
+                {
+                    "name": "reward_escrow_code",
+                    "type": "name"
+                },
+                {
+                    "name": "synth_escrow_code",
+                    "type": "name"
+                },
+                {
+                    "name": "fee_pool_code",
+                    "type": "name"
+                },
+                {
+                    "name": "burn_code",
+                    "type": "name"
+                },
+                {
+                    "name": "log_code",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "editissuance",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_issuer_count",
+                    "type": "uint64"
+                },
+                {
+                    "name": "issuance_ratio",
+                    "type": "uint128"
+                },
+                {
+                    "name": "max_issuance_ratio",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "editissuer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "max_minimum_staking_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "minimum_stake_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "editliquid",
+            "base": "",
+            "fields": [
+                {
+                    "name": "liquidation_delay",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_liquidation_delay",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_liquidation_delay",
+                    "type": "uint64"
+                },
+                {
+                    "name": "liquidation_ratio",
+                    "type": "uint128"
+                },
+                {
+                    "name": "max_liquidation_ratio",
+                    "type": "uint128"
+                },
+                {
+                    "name": "ratio_from_target_buffer",
+                    "type": "uint128"
+                },
+                {
+                    "name": "liquidation_penalty",
+                    "type": "uint128"
+                },
+                {
+                    "name": "max_liquidation_penalty",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "editreescrow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_escrowed_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_vesting_entries",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reward_period_duration",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "editsupply",
+            "base": "",
+            "fields": [
+                {
+                    "name": "last_mint_event",
+                    "type": "uint64"
+                },
+                {
+                    "name": "week_counter",
+                    "type": "uint64"
+                },
+                {
+                    "name": "minter_reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "initial_weekly_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_minter_reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "mint_period_duration",
+                    "type": "uint64"
+                },
+                {
+                    "name": "inflation_start_date",
+                    "type": "uint64"
+                },
+                {
+                    "name": "mint_buffer",
+                    "type": "uint64"
+                },
+                {
+                    "name": "supply_decay_start",
+                    "type": "uint64"
+                },
+                {
+                    "name": "supply_decay_end",
+                    "type": "uint64"
+                },
+                {
+                    "name": "decay_rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "terminal_supply_rate_annual",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "editsyescrow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_vested_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_vesting_entries",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "editsynthfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "synth",
+                    "type": "symbol"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "ref_rate",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "ex_entry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "src",
+                    "type": "symbol"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "dest",
+                    "type": "symbol"
+                },
+                {
+                    "name": "amount_received",
+                    "type": "asset"
+                },
+                {
+                    "name": "exchange_fee_rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "round_id_for_src",
+                    "type": "uint64"
+                },
+                {
+                    "name": "round_id_for_dest",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "exchange",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "source_currency_key",
+                    "type": "symbol"
+                },
+                {
+                    "name": "source_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "dest_currency_key",
+                    "type": "symbol"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "exchange_entry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "dest",
+                    "type": "symbol"
+                },
+                {
+                    "name": "ex_entry_list",
+                    "type": "ex_entry[]"
+                }
+            ]
+        },
+        {
+            "name": "exchange_rate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "exconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "waiting_period_secs",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "exratecfg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "rate_stale_period",
+                    "type": "uint64"
+                },
+                {
+                    "name": "oracle_future_limit",
+                    "type": "uint64"
+                },
+                {
+                    "name": "exchange_rate_length",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "exstatecfg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "max_entries_in_queue",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "fee_period",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fee_period_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "starting_debt_index",
+                    "type": "uint64"
+                },
+                {
+                    "name": "start_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fees_to_distribute",
+                    "type": "asset"
+                },
+                {
+                    "name": "fees_claimed",
+                    "type": "asset"
+                },
+                {
+                    "name": "rewards_to_distribute",
+                    "type": "asset"
+                },
+                {
+                    "name": "rewards_claimed",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "fee_rate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "synth",
+                    "type": "symbol"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "ref_rate",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "feeissuadata",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "debt_percentage",
+                    "type": "uint128"
+                },
+                {
+                    "name": "debt_entry_index",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "feepoolcfg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "max_exchange_fee_rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "fee_period_length",
+                    "type": "uint64"
+                },
+                {
+                    "name": "current_fee_period",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fee_period_duration",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_fee_period_duration",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_fee_period_duration",
+                    "type": "uint64"
+                },
+                {
+                    "name": "target_threshold",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "flagaccliq",
+            "base": "",
+            "fields": [
+                {
+                    "name": "actor",
+                    "type": "name"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "fpstatecfg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "fee_period_length",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "freezerate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "currencyKey",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "global",
+            "base": "",
+            "fields": [
+                {
+                    "name": "status",
+                    "type": "uint64"
+                },
+                {
+                    "name": "issuer_code",
+                    "type": "name"
+                },
+                {
+                    "name": "rewards_distribution",
+                    "type": "name"
+                },
+                {
+                    "name": "reward_escrow_code",
+                    "type": "name"
+                },
+                {
+                    "name": "synth_escrow_code",
+                    "type": "name"
+                },
+                {
+                    "name": "fee_pool_code",
+                    "type": "name"
+                },
+                {
+                    "name": "burn_code",
+                    "type": "name"
+                },
+                {
+                    "name": "log_code",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "initfeepool",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "inverseprice",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                },
+                {
+                    "name": "entry_point",
+                    "type": "uint128"
+                },
+                {
+                    "name": "upper_limit",
+                    "type": "uint128"
+                },
+                {
+                    "name": "lower_limit",
+                    "type": "uint128"
+                },
+                {
+                    "name": "frozen",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "issuance_data",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "initial_debt_ownership",
+                    "type": "uint128"
+                },
+                {
+                    "name": "debt_entry_index",
+                    "type": "uint64"
+                },
+                {
+                    "name": "last_issue_event",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "issuancecfg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_issuer_count",
+                    "type": "uint64"
+                },
+                {
+                    "name": "issuance_ratio",
+                    "type": "uint128"
+                },
+                {
+                    "name": "max_issuance_ratio",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "issue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "issuerconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "max_minimum_staking_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "minimum_stake_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "issuesynths",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "issurmsynths",
+            "base": "",
+            "fields": [
+                {
+                    "name": "amount",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "liqconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "liquidation_delay",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_liquidation_delay",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_liquidation_delay",
+                    "type": "uint64"
+                },
+                {
+                    "name": "liquidation_ratio",
+                    "type": "uint128"
+                },
+                {
+                    "name": "max_liquidation_ratio",
+                    "type": "uint128"
+                },
+                {
+                    "name": "ratio_from_target_buffer",
+                    "type": "uint128"
+                },
+                {
+                    "name": "liquidation_penalty",
+                    "type": "uint128"
+                },
+                {
+                    "name": "max_liquidation_penalty",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "liquidate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "target",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "liquidation_entry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "deadline",
+                    "type": "uint64"
+                },
+                {
+                    "name": "caller",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "mint",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "open",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "ram_payer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "purge",
+            "base": "",
+            "fields": [
+                {
+                    "name": "accountList",
+                    "type": "name[]"
+                },
+                {
+                    "name": "currencyKey",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "reconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_escrowed_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_vesting_entries",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reward_period_duration",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "retire",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "retiren",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "reward_escrow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "total_vested_account_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_escrowed_account_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "vesting_schedule_list",
+                    "type": "vesting_schedule[]"
+                }
+            ]
+        },
+        {
+            "name": "rewardvest",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setinvsprice",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                },
+                {
+                    "name": "entry_point",
+                    "type": "uint128"
+                },
+                {
+                    "name": "upper_limit",
+                    "type": "uint128"
+                },
+                {
+                    "name": "lower_limit",
+                    "type": "uint128"
+                },
+                {
+                    "name": "freeze",
+                    "type": "bool"
+                },
+                {
+                    "name": "freeze_at_upper_limit",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "setrate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "settle",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "supply",
+            "base": "",
+            "fields": [
+                {
+                    "name": "last_mint_event",
+                    "type": "uint64"
+                },
+                {
+                    "name": "week_counter",
+                    "type": "uint64"
+                },
+                {
+                    "name": "minter_reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "initial_weekly_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_minter_reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "mint_period_duration",
+                    "type": "uint64"
+                },
+                {
+                    "name": "inflation_start_date",
+                    "type": "uint64"
+                },
+                {
+                    "name": "mint_buffer",
+                    "type": "uint64"
+                },
+                {
+                    "name": "supply_decay_start",
+                    "type": "uint64"
+                },
+                {
+                    "name": "supply_decay_end",
+                    "type": "uint64"
+                },
+                {
+                    "name": "decay_rate",
+                    "type": "uint128"
+                },
+                {
+                    "name": "terminal_supply_rate_annual",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "synth",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                },
+                {
+                    "name": "max_supply_to_purge",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "synth_escrow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "total_vested_account_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "vesting_schedule_list",
+                    "type": "vesting_schedule[]"
+                }
+            ]
+        },
+        {
+            "name": "syntheconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_vested_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_vesting_entries",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "synthvest",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "transferstle",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "uptratelist",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym_list",
+                    "type": "symbol[]"
+                },
+                {
+                    "name": "rate_list",
+                    "type": "uint128[]"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "vesting_schedule",
+            "base": "",
+            "fields": [
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "adddist",
+            "type": "adddist",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addsupply",
+            "type": "addsupply",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addsynth",
+            "type": "addsynth",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addsynthfee",
+            "type": "addsynthfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "appsynthvest",
+            "type": "appsynthvest",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "burnsynths",
+            "type": "burnsynths",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "burnsynthstg",
+            "type": "burnsynthstg",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "checkremliq",
+            "type": "checkremliq",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "claimfees",
+            "type": "claimfees",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "close",
+            "type": "close",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: Close Token Balance\nsummary: 'Close {{nowrap owner}}’s zero quantity balance'\nicon: @ICON_BASE_URL@/@TOKEN_ICON_URI@\n---\n\n{{owner}} agrees to close their zero quantity balance for the {{symbol_to_symbol_code symbol}} token.\n\nRAM will be refunded to the RAM payer of the {{symbol_to_symbol_code symbol}} token balance for {{owner}}."
+        },
+        {
+            "name": "closecfeepod",
+            "type": "closecfeepod",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: Create New Token\nsummary: 'Create a new token'\nicon: @ICON_BASE_URL@/@TOKEN_ICON_URI@\n---\n\n{{$action.account}} agrees to create a new token with symbol {{asset_to_symbol_code maximum_supply}} to be managed by {{issuer}}.\n\nThis action will not result any any tokens being issued into circulation.\n\n{{issuer}} will be allowed to issue tokens into circulation, up to a maximum supply of {{maximum_supply}}.\n\nRAM will deducted from {{$action.account}}’s resources to create the necessary records."
+        },
+        {
+            "name": "deldist",
+            "type": "deldist",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delirate",
+            "type": "delirate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delrate",
+            "type": "delrate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delsynth",
+            "type": "delsynth",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delsynthfee",
+            "type": "delsynthfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "distrewards",
+            "type": "distrewards",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editdist",
+            "type": "editdist",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editexchange",
+            "type": "editexchange",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editexrate",
+            "type": "editexrate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editexstate",
+            "type": "editexstate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editfeepool",
+            "type": "editfeepool",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editfpstate",
+            "type": "editfpstate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editglobal",
+            "type": "editglobal",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editissuance",
+            "type": "editissuance",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editissuer",
+            "type": "editissuer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editliquid",
+            "type": "editliquid",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editreescrow",
+            "type": "editreescrow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editsupply",
+            "type": "editsupply",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editsyescrow",
+            "type": "editsyescrow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "editsynthfee",
+            "type": "editsynthfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "exchange",
+            "type": "exchange",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "flagaccliq",
+            "type": "flagaccliq",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "freezerate",
+            "type": "freezerate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "initfeepool",
+            "type": "initfeepool",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issue",
+            "type": "issue",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: Issue Tokens into Circulation\nsummary: 'Issue {{nowrap quantity}} into circulation and transfer into {{nowrap to}}’s account'\nicon: @ICON_BASE_URL@/@TOKEN_ICON_URI@\n---\n\nThe token manager agrees to issue {{quantity}} into circulation, and transfer it into {{to}}’s account.\n\n{{#if memo}}There is a memo attached to the transfer stating:\n{{memo}}\n{{/if}}\n\nIf {{to}} does not have a balance for {{asset_to_symbol_code quantity}}, or the token manager does not have a balance for {{asset_to_symbol_code quantity}}, the token manager will be designated as the RAM payer of the {{asset_to_symbol_code quantity}} token balance for {{to}}. As a result, RAM will be deducted from the token manager’s resources to create the necessary records.\n\nThis action does not allow the total quantity to exceed the max allowed supply of the token."
+        },
+        {
+            "name": "issuesynths",
+            "type": "issuesynths",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issurmsynths",
+            "type": "issurmsynths",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "liquidate",
+            "type": "liquidate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "mint",
+            "type": "mint",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "open",
+            "type": "open",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: Open Token Balance\nsummary: 'Open a zero quantity balance for {{nowrap owner}}'\nicon: @ICON_BASE_URL@/@TOKEN_ICON_URI@\n---\n\n{{ram_payer}} agrees to establish a zero quantity balance for {{owner}} for the {{symbol_to_symbol_code symbol}} token.\n\nIf {{owner}} does not have a balance for {{symbol_to_symbol_code symbol}}, {{ram_payer}} will be designated as the RAM payer of the {{symbol_to_symbol_code symbol}} token balance for {{owner}}. As a result, RAM will be deducted from {{ram_payer}}’s resources to create the necessary records."
+        },
+        {
+            "name": "purge",
+            "type": "purge",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "retire",
+            "type": "retire",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: Remove Tokens from Circulation\nsummary: 'Remove {{nowrap quantity}} from circulation'\nicon: @ICON_BASE_URL@/@TOKEN_ICON_URI@\n---\n\nThe token manager agrees to remove {{quantity}} from circulation, taken from their own account.\n\n{{#if memo}} There is a memo attached to the action stating:\n{{memo}}\n{{/if}}"
+        },
+        {
+            "name": "retiren",
+            "type": "retiren",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rewardvest",
+            "type": "rewardvest",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setinvsprice",
+            "type": "setinvsprice",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setrate",
+            "type": "setrate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "settle",
+            "type": "settle",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "synthvest",
+            "type": "synthvest",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfer",
+            "type": "transfer",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: Transfer Tokens\nsummary: 'Send {{nowrap quantity}} from {{nowrap from}} to {{nowrap to}}'\nicon: @ICON_BASE_URL@/@TRANSFER_ICON_URI@\n---\n\n{{from}} agrees to send {{quantity}} to {{to}}.\n\n{{#if memo}}There is a memo attached to the transfer stating:\n{{memo}}\n{{/if}}\n\nIf {{from}} is not already the RAM payer of their {{asset_to_symbol_code quantity}} token balance, {{from}} will be designated as such. As a result, RAM will be deducted from {{from}}’s resources to refund the original RAM payer.\n\nIf {{to}} does not have a balance for {{asset_to_symbol_code quantity}}, {{from}} will be designated as the RAM payer of the {{asset_to_symbol_code quantity}} token balance for {{to}}. As a result, RAM will be deducted from {{from}}’s resources to create the necessary records."
+        },
+        {
+            "name": "transferstle",
+            "type": "transferstle",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "uptratelist",
+            "type": "uptratelist",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "currrundrate",
+            "type": "current_round_rate",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "cwithdraw",
+            "type": "claim_withdraw",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "debtledger",
+            "type": "debt_ledger",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "distribution",
+            "type": "distribution",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "exconfig",
+            "type": "exconfig",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "exentry",
+            "type": "exchange_entry",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "exrate",
+            "type": "exchange_rate",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "exratecfg",
+            "type": "exratecfg",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "exstatecfg",
+            "type": "exstatecfg",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "feeissuadata",
+            "type": "feeissuadata",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "feeperiod",
+            "type": "fee_period",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "feepoolcfg",
+            "type": "feepoolcfg",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "feerate",
+            "type": "fee_rate",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "fpstatecfg",
+            "type": "fpstatecfg",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "global",
+            "type": "global",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "inverseprice",
+            "type": "inverseprice",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "issuancecfg",
+            "type": "issuancecfg",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "issuancedata",
+            "type": "issuance_data",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "issuerconfig",
+            "type": "issuerconfig",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "lentry",
+            "type": "liquidation_entry",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "liqconfig",
+            "type": "liqconfig",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "reconfig",
+            "type": "reconfig",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "rewardescrow",
+            "type": "reward_escrow",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "currency_stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "supply",
+            "type": "supply",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "synth",
+            "type": "synth",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "syntheconfig",
+            "type": "syntheconfig",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "synthescrow",
+            "type": "synth_escrow",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [
+        {
+            "id": "Warranty",
+            "body": "The invoker of the contract action shall uphold its Obligations under this Contract in a timely and workmanlike manner, using knowledge and recommendations for performing the services which meet generally acceptable standards set forth by EOS.IO Blockchain Block Producers."
+        },
+        {
+            "id": "Default",
+            "body": "The occurrence of any of the following shall constitute a material default under this Contract:"
+        },
+        {
+            "id": "Remedies",
+            "body": "In addition to any and all other rights a party may have available according to law, if a party defaults by failing to substantially perform any provision, term or condition of this Contract, the other party may terminate the Contract by providing written notice to the defaulting party. This notice shall describe with sufficient detail the nature of the default. The party receiving such notice shall promptly be removed from being a Block Producer and this Contract shall be automatically terminated."
+        },
+        {
+            "id": "ForceMajeure",
+            "body": "If performance of this Contract or any obligation under this Contract is prevented, restricted, or interfered with by causes beyond either party's reasonable control (\"Force Majeure\"), and if the party unable to carry out its obligations gives the other party prompt written notice of such event, then the obligations of the party invoking this provision shall be suspended to the extent necessary by such event. The term Force Majeure shall include, without limitation, acts of God, fire, explosion, vandalism, storm or other similar occurrence, orders or acts of military or civil authority, or by national emergencies, insurrections, riots, or wars, or strikes, lock-outs, work stoppages, or supplier failures. The excused party shall use reasonable efforts under the circumstances to avoid or remove such causes of non-performance and shall proceed to perform with reasonable dispatch whenever such causes are removed or ceased. An act or omission shall be deemed within the reasonable control of a party if committed, omitted, or caused by such party, or its employees, officers, agents, or affiliates."
+        },
+        {
+            "id": "DisputeResolution",
+            "body": "Any controversies or disputes arising out of or relating to this Contract will be resolved by binding arbitration under the default rules set forth by the EOS.IO Blockchain. The arbitrator's award will be final, and judgment may be entered upon it by any court having proper jurisdiction."
+        },
+        {
+            "id": "EntireAgreement",
+            "body": "This Contract contains the entire agreement of the parties, and there are no other promises or conditions in any other agreement whether oral or written concerning the subject matter of this Contract. This Contract supersedes any prior written or oral agreements between the parties."
+        },
+        {
+            "id": "Severability",
+            "body": "If any provision of this Contract will be held to be invalid or unenforceable for any reason, the remaining provisions will continue to be valid and enforceable. If a court finds that any provision of this Contract is invalid or unenforceable, but that by limiting such provision it would become valid and enforceable, then such provision will be deemed to be written, construed, and enforced as so limited."
+        },
+        {
+            "id": "Amendment",
+            "body": "This Contract may be modified or amended in writing by mutual agreement between the parties, if the writing is signed by the party obligated under the amendment."
+        },
+        {
+            "id": "GoverningLaw",
+            "body": "This Contract shall be construed in accordance with the Maxims of Equity."
+        },
+        {
+            "id": "Notice",
+            "body": "Any notice or communication required or permitted under this Contract shall be sufficiently given if delivered to a verifiable email address or to such other email address as one party may have publicly furnished in writing, or published on a broadcast contract provided by this blockchain for purposes of providing notices of this type."
+        },
+        {
+            "id": "WaiverOfContractualRight",
+            "body": "The failure of either party to enforce any provision of this Contract shall not be construed as a waiver or limitation of that party's right to subsequently enforce and compel strict compliance with every provision of this Contract."
+        },
+        {
+            "id": "ArbitratorsFees_",
+            "body": "In any action arising hereunder or any separate action pertaining to the validity of this Agreement, both sides shall pay half the initial cost of arbitration, and the prevailing party shall be awarded reasonable arbitrator's fees and costs."
+        },
+        {
+            "id": "ConstructionAndInterpretation",
+            "body": "The rule requiring construction or interpretation against the drafter is waived. The document shall be deemed as if it were drafted by both parties in a mutual effort."
+        },
+        {
+            "id": "InWitnessWhereof",
+            "body": "In witness whereof, the parties hereto have caused this Agreement to be executed by themselves or their duly authorized representatives as of the date of execution, and authorized as proven by the cryptographic signature on the transaction that invokes this contract."
+        }
+    ],
+    "variants": []
+}
